@@ -1,0 +1,76 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "beko",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#number"
+		},
+		{
+			"include": "#identifier"
+		},
+		{
+			"include": "#paren-expression"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.beko",
+					"match": "\\b(IF|THEN|ELSE|WHILE|LOOP|DO|END)\\b"
+				},
+				{
+					"name": "keyword.other.beko",
+					"match": "\\bPRINT\\b"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.hash",
+					"begin": "#",
+					"end": "\n"
+				}
+			]
+		},
+		"number": {
+			"patterns": [
+				{
+					"name": "constant.numeric",
+					"match": "\\b[0-9]+\\b"
+				}
+			]
+		},
+		"identifier": {
+			"patterns": [
+				{
+					"name": "variable.name.beko",
+					"match": "\\b([A-Za-z]|_)([A-Za-z0-9]|_)*\\b"
+				}
+			]
+		},
+		"paren-expression": {
+			"begin": "\\(",
+			"end": "\\)",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.paren.open"
+				}
+			},
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.paren.close"
+				}
+			},
+			"name": "expression.group"
+		}
+	},
+	"scopeName": "source.bk"
+}

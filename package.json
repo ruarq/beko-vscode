@@ -1,0 +1,25 @@
+{
+  "name": "beko",
+  "displayName": "beko",
+  "description": "language support for the beko language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "beko",
+      "aliases": ["beko", "beko"],
+      "extensions": [".bk"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "beko",
+      "scopeName": "source.bk",
+      "path": "./syntaxes/beko.tmLanguage.json"
+    }]
+  }
+}
