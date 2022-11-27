@@ -2,7 +2,11 @@
   "name": "beko",
   "displayName": "beko",
   "description": "language support for the beko language",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "repository": {
+    "url": "https://github.com/ruarq/beko-vscode.git"
+  },
+  "publisher": "ruarq",
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -10,16 +14,25 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "beko",
-      "aliases": ["beko", "beko"],
-      "extensions": [".bk"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "beko",
-      "scopeName": "source.bk",
-      "path": "./syntaxes/beko.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "beko",
+        "aliases": [
+          "beko",
+          "beko"
+        ],
+        "extensions": [
+          ".bk"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "beko",
+        "scopeName": "source.bk",
+        "path": "./syntaxes/beko.tmLanguage.json"
+      }
+    ]
   }
 }
