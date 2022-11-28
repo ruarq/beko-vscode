@@ -12,3 +12,9 @@ There are no known issues so far.
 
 ### 0.0.1
 Added basic syntax highlighting support.
+
+### 0.0.2
+Added syntax highlighting for the `FOR` keyword.
+
+### 0.0.3
+Added syntax highlighting for the `ELIF` keyword.

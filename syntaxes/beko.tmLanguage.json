@@ -23,7 +23,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.beko",
-					"match": "\\b(FOR|IF|THEN|ELSE|WHILE|LOOP|DO|END)\\b"
+					"match": "\\b(FOR|IF|THEN|ELIF|ELSE|WHILE|LOOP|DO|END)\\b"
 				},
 				{
 					"name": "keyword.other.beko",
