@@ -2,7 +2,7 @@
 The "beko" extension adds syntax highlighting support to the beko language.
 
 ## Features
-Highlights all control flow keywords `IF`, `THEN`, `ELSE`, `END`, `WHILE`, `DO` and `LOOP`
+Highlights all keywords `PROGRAM`, `VAR`, `RETURN`, `IF`, `THEN`, `ELSE`, `END`, `WHILE`, `DO` and `LOOP`.
 Highlights variables and numeric constants
 
 ## Known Issues
@@ -18,3 +18,7 @@ Added syntax highlighting for the `FOR` keyword.
 
 ### 0.0.3
 Added syntax highlighting for the `ELIF` keyword.
+
+### 0.1.0
+Added syntax highlighting for the `PROGRAM`, `VAR` and `RETURN` keywords.
+Added syntax highlighting for strings.

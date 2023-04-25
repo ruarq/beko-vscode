@@ -2,7 +2,7 @@
   "name": "beko",
   "displayName": "beko",
   "description": "language support for the beko language",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "repository": {
     "url": "https://github.com/ruarq/beko-vscode.git"
   },

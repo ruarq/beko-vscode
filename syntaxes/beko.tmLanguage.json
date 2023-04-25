@@ -16,14 +16,25 @@
 		},
 		{
 			"include": "#paren-expression"
+		},
+		{
+			"include": "#strings"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [
 				{
+					"name": "support.function.beko",
+					"match": "\\b(PROGRAM)\\b"
+				},
+				{
+					"name": "support.variable.beko",
+					"match": "\\b(VAR)\\b"
+				},
+				{
 					"name": "keyword.control.beko",
-					"match": "\\b(FOR|IF|THEN|ELIF|ELSE|WHILE|LOOP|DO|END)\\b"
+					"match": "\\b(FOR|IF|THEN|ELIF|ELSE|WHILE|LOOP|DO|RETURN|END)\\b"
 				},
 				{
 					"name": "keyword.other.beko",
@@ -34,7 +45,7 @@
 		"comments": {
 			"patterns": [
 				{
-					"name": "comment.line.hash",
+					"name": "comment.line.hash.beko",
 					"begin": "#",
 					"end": "\n"
 				}
@@ -43,7 +54,7 @@
 		"number": {
 			"patterns": [
 				{
-					"name": "constant.numeric",
+					"name": "constant.numeric.beko",
 					"match": "\\b[0-9]+\\b"
 				}
 			]
@@ -61,15 +72,20 @@
 			"end": "\\)",
 			"beginCaptures": {
 				"0": {
-					"name": "punctuation.paren.open"
+					"name": "punctuation.paren.open.beko"
 				}
 			},
 			"endCaptures": {
 				"0": {
-					"name": "punctuation.paren.close"
+					"name": "punctuation.paren.close.beko"
 				}
 			},
 			"name": "expression.group"
+		},
+		"strings": {
+			"name": "string.quoted.double.beko",
+			"begin": "\"",
+			"end": "\""
 		}
 	},
 	"scopeName": "source.bk"
